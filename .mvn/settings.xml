@@ -1,0 +1,23 @@
+<settings>
+  <!-- the path to the local repository - defaults to ~/.m2/repository
+  -->
+  <!-- <localRepository>/path/to/local/repo</localRepository>
+  -->
+    
+ 
+  <profiles>
+    
+  </profiles>
+
+  <pluginGroups>
+    <pluginGroup>org.sonatype.plugins</pluginGroup>
+  </pluginGroups>
+
+  <servers>
+    <server>
+      <id>192.168.0.122:5000</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+  </servers>
+</settings>
