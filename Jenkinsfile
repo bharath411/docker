@@ -13,7 +13,7 @@ node {
    stage 'Build'
    // Run the maven build
    sh "${mvnHome}/bin/mvn  clean package"
-   sh "${mvnHome}/bin/mvn  --settings ./.mvn/settings.xml dockerfile:build"
-   sh "${mvnHome}/bin/mvn  --settings ./.mvn/settings.xml dockerfile:push"
+   sh "sudo ${mvnHome}/bin/mvn  --settings ./.mvn/settings.xml dockerfile:build"
+   sh "sudo ${mvnHome}/bin/mvn  --settings ./.mvn/settings.xml dockerfile:push"
    
 }
