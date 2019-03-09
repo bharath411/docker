@@ -13,7 +13,7 @@ node {
    stage 'Build'
    // Run the maven build
    sh "${mvnHome}/bin/mvn  clean package"
-   sh "${mvnHome}/bin/mvn  dockerfile:build"
-   sh "${mvnHome}/bin/mvn  dockerfile:push"
-   step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
+   sh "${mvnHome}/bin/mvn  --settings ./.mvn/settings.xml dockerfile:build"
+   sh "${mvnHome}/bin/mvn  --settings ./.mvn/settings.xml dockerfile:push"
+   
 }
