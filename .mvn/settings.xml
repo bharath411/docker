@@ -15,7 +15,7 @@
 
   <servers>
     <server>
-      <id>sample</id>
+      <id>192.168.0.104:5000</id>
       <username>admin</username>
       <password>admin123</password>
     </server>
