@@ -34,7 +34,7 @@
                 <artifactId>dockerfile-maven-plugin</artifactId>
                 <version>1.4.9</version>
                 <configuration>
-					<repository>192.168.0.122:5000/slokam/springio</repository>
+					<repository>bharath411/springio</repository>
 					<tag>latest</tag>
 					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 				</configuration>
